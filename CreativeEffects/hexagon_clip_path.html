@@ -226,5 +226,13 @@
         <div class="hexagon"></div>
       </div>
     </div>
+    <div id="cursor"></div>
+    <script type="text/javascript">
+      var cursor = document.getElementById("cursor");
+      window.onmousemove = function (e) {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+      };
+    </script>
   </body>
 </html>
